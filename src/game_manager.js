@@ -149,13 +149,11 @@ export class GameManager {
             this.gameState = 'paused';
             this.clock.stop(); // Stop the clock when paused
             this.uiManager.showPauseScreen(); // Show pause UI
-            console.log('Game Paused');
         } else if (this.gameState === 'paused') {
             this.gameState = 'playing';
             this.clock.start(); // Resume the clock
             this.uiManager.hidePauseScreen(); // Hide pause UI
             this.gameLoop(); // Re-initiate the game loop
-            console.log('Game Resumed');
         }
     }
 
@@ -171,7 +169,6 @@ export class GameManager {
                 const newCount = Math.min(currentCount * 2, this.MAX_AI_COUNT - currentCount);
                 this.spawnAI(newCount);
             }
-            console.log(`Spawned more AI(s). Current total: ${this.aiPlayers.length}`);
         }
         // Update entities
         this.player.update(delta);

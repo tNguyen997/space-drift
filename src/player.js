@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { Projectile } from './Projectile.js';
+import { Projectile } from './projectile.js';
 
 export class Player {
     constructor(camera, scene) {

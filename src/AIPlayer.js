@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { Projectile } from './Projectile.js';
+import { Projectile } from './projectile.js';
 
 export class AIPlayer {
     constructor(scene, target, initialHealth = 5) {
@@ -76,7 +76,6 @@ export class AIPlayer {
             });
             // Remove the AI mesh from the scene
             this.scene.remove(this.mesh);
-            console.log("AI has been removed from scene.");
         }
     }
 }
