@@ -35,6 +35,8 @@ jobs:
         uses: actions/setup-node@v4
       - name: Install dependencies
         run: npm install
+      - name: Install Three.js
+        run: npm install --save three
       - name: Build app
         run: npm run build
       - name: Setup Pages
