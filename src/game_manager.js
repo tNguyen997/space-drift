@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { Player } from './Player.js';
+import { Player } from './player.js';
 import { AIPlayer } from './AIPlayer.js';
 import { CollisionDetector } from './collision_detector.js';
 import { UIManager } from './ui_manager.js';
